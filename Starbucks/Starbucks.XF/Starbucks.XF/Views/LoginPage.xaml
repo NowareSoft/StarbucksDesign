@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:implementations="clr-namespace:Starbucks.XF.Implementations"
+             mc:Ignorable="d"
+             x:Class="Starbucks.XF.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    <AbsoluteLayout>
+        <AbsoluteLayout
+            AbsoluteLayout.LayoutBounds="0,0,1,.5"
+            AbsoluteLayout.LayoutFlags="All">
+            <!-- Background -->
+            <Image
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="Fill"
+                Source="starbucks_local.png"/>
+
+            <border:SfBorder
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Black"
+                Opacity=".7"/>
+
+            <!-- Data -->
+            <StackLayout
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Margin="30,0"
+                VerticalOptions="EndAndExpand">
+
+                <Image
+                    Aspect="AspectFit"
+                    HeightRequest="150"
+                    HorizontalOptions="Center"
+                    Source="starbucks_logo.png"
+                    WidthRequest="150"/>
+
+                <StackLayout
+                    Orientation="Horizontal">
+                    <!--Sign In-->
+                    <Label
+                        FontAttributes="Bold, Italic"
+                        FontSize="35"
+                        Text="Sign in"
+                        TextColor="White"/>
+                    
+                    <!-- Forgot Password -->
+                    <Label
+                        FontSize="13"
+                        HorizontalOptions="EndAndExpand"
+                        Text="Forgot Password?"
+                        TextColor="#3FAA8B"
+                        VerticalTextAlignment="Center"/>
+                </StackLayout>
+                
+                
+                <border:SfBorder
+                    BackgroundColor="White"
+                    BorderWidth="0"
+                    Padding="7">
+                    <implementations:MyEntry
+                        FontSize="15"
+                        Keyboard="Numeric"
+                        Placeholder="Phone"/>
+                </border:SfBorder>
+            </StackLayout>
+            
+        </AbsoluteLayout>
+        
+        <AbsoluteLayout
+            AbsoluteLayout.LayoutBounds="1,1,1,.5"
+            AbsoluteLayout.LayoutFlags="All">
+            <!-- Data -->
+            <StackLayout
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Margin="30,0">
+                <!-- Password -->
+                <border:SfBorder
+                    BackgroundColor="White"
+                    BorderWidth="0"
+                    Padding="7"
+                    Margin="0,0,0,30">
+                    <implementations:MyEntry
+                        FontSize="14"
+                        IsPassword="True"
+                        Placeholder="Password"/>
+                </border:SfBorder>
+                
+                <!-- Login -->
+                <border:SfBorder
+                    BackgroundColor="#196C32"
+                    BorderWidth="0"
+                    CornerRadius="35"
+                    HeightRequest="70"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="70">
+                    <Image
+                        HorizontalOptions="Center"
+                        Source="next.png"
+                        VerticalOptions="Center"
+                        WidthRequest="25"/>
+                </border:SfBorder>
+            </StackLayout>
+
+            <StackLayout
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Margin="30,0,30,30">
+
+                <StackLayout
+                    Orientation="Horizontal"
+                    VerticalOptions="EndAndExpand">
+                    <Label
+                        FontSize="14"
+                        Text="Don't have any account?"
+                        TextColor="#868686"
+                        VerticalTextAlignment="Center"/>
+                    
+                    <buttons:SfButton
+                        BackgroundColor="Transparent"
+                        BorderWidth="1"
+                        BorderColor="#067655"
+                        CornerRadius="25"
+                        HorizontalOptions="EndAndExpand"
+                        Text="Sign Up"
+                        TextColor="#196B31"
+                        WidthRequest="125"/>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starbucks.XF.Android", "Starbucks.XF\Starbucks.XF.Android\Starbucks.XF.Android.csproj", "{D8082EAE-A516-4BDC-9C65-B6E869394626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starbucks.XF", "Starbucks.XF\Starbucks.XF\Starbucks.XF.csproj", "{44F7F385-1627-47A9-836C-F2CDF98109AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8082EAE-A516-4BDC-9C65-B6E869394626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8082EAE-A516-4BDC-9C65-B6E869394626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8082EAE-A516-4BDC-9C65-B6E869394626}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D8082EAE-A516-4BDC-9C65-B6E869394626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8082EAE-A516-4BDC-9C65-B6E869394626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8082EAE-A516-4BDC-9C65-B6E869394626}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{44F7F385-1627-47A9-836C-F2CDF98109AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F7F385-1627-47A9-836C-F2CDF98109AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F7F385-1627-47A9-836C-F2CDF98109AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F7F385-1627-47A9-836C-F2CDF98109AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A92064F0-1908-4D18-B9AA-DE419C004744}
+	EndGlobalSection
+EndGlobal
